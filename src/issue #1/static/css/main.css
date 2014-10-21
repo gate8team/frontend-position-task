@@ -4,3 +4,93 @@ __________________________________*/
 
 /* =User Styles
 __________________________________*/
+.-boxed *, .-boxed *:before, .-boxed *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.b-row {
+  margin: 10px 0 10px 0;
+  width: 100%;
+  border: 1px solid #eee;
+  overflow: hidden;
+}
+
+.b-column {
+  width: 100%;
+}
+
+.b-column.-bordered {
+  margin-bottom: -99999px;
+  padding-bottom: 99999px;
+  border-left: 1px solid #eee;
+}
+
+.b-column.-bordered:first-child {
+  border-left: none;
+}
+
+.b-column.-left {
+  float: left;
+}
+
+.b-column.-right {
+  float: right;
+}
+
+.b-column.-w3f {
+  width: 33.333333%;
+}
+
+.b-column.-w4f {
+  width: 25%;
+}
+
+.b-column.-w5f {
+  width: 20%;
+}
+
+.b-column-content {
+  padding: 10px;
+}
+
+.b-row.-table {
+  display: table;
+}
+
+.b-row.-table .b-column {
+  margin: 0;
+  padding: 0;
+  display: table-cell;
+  width: 20%;
+}
+
+.b-row.-table .b-column.-w30p {
+  width: 30%;
+}
+
+.b-row.-flexbox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: stretch;
+}
+
+.b-row.-flexbox .b-column {
+  margin: 0;
+  padding: 0;
+  flex-flow: column wrap;
+  width: 20%;
+  flex-grow: 1;
+}
+
+.b-row.-flexbox .b-column.-w30p {
+  width: 30%;
+}
+
+.b-row.-flexbox .b-column:last-child {
+  flex-grow: 0;
+  flex-shrink: 600;
+  order: 5;
+}
