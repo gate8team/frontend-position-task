@@ -1,0 +1,39 @@
+.b-task {
+	line-height: 1.6666em;
+	border: 1px #ccc solid;
+	background: #fff;
+	border-radius: 3px;
+	margin: 10px;
+	padding: 10px;
+}
+
+.b-task-caption {
+	font-size: 1.1666em;
+}
+
+.b-task-article {
+	margin-top: 10px;
+}
+
+.b-task-img {
+	margin-top: 10px;
+	display: block;
+}
+
+.b-task-img--inline {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.b-task-img--issue9 {
+	margin-left: -6px;
+}
+
+.b-task-code {
+	font: 12px Consolas, "Liberation Mono", Courier, monospace;
+	margin: 0 2px;
+	padding: 0px 5px;
+	border: 1px solid #eaeaea;
+	background-color: #f8f8f8;
+	border-radius: 3px;
+}

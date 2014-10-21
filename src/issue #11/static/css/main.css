@@ -1,0 +1,14 @@
+/* =Main Styles
+__________________________________*/
+@import url(../../../global/css/layout.css);
+@import url(../../../global/css/blocks/b-form.css);
+
+/* =User Styles
+__________________________________*/
+
+#canvas {
+	border: 1px solid #eaeaea;
+	border-radius: 3px;
+	background: #f8f8f8;
+	margin-top: 10px;
+}

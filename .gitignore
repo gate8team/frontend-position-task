@@ -1,0 +1,10 @@
+#OS junk files
+[Tt]humbs.db
+*.DS_Store
+._*.*
+
+#IDEA
+.idea/*
+
+#Node.js
+node_modules/*
