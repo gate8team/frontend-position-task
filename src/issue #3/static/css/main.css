@@ -4,3 +4,68 @@ __________________________________*/
 
 /* =User Styles
 __________________________________*/
+.-boxed *, .-boxed *:before, .-boxed *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.b-row {
+  margin: 10px 0 10px 0;
+  width: 100%;
+  border: 1px solid #eee;
+  overflow: hidden;
+}
+
+.b-column {
+  width: 100%;
+}
+
+.b-column.-bordered {
+  margin-bottom: -99999px;
+  padding-bottom: 99999px;
+  border-left: 1px solid #eee;
+}
+
+.b-column.-bordered:first-child {
+  border-left: none;
+}
+
+.b-column.-left {
+  float: left;
+}
+
+.b-column.-w3f {
+  width: 33.333333%;
+}
+
+.b-column-content {
+  padding: 10px 15px 10px 15px;
+}
+
+.b-content {
+  display: table;
+  width: 100%;
+  overflow: hidden;
+  background: url(../img/dot.png) repeat-x 0 bottom;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.b-content-title {
+  width: 100%;
+  display: table-cell;
+}
+
+.b-content-price {
+  text-align: right;
+  display: table-cell;
+  vertical-align: bottom;
+}
+
+span {
+  padding: 0 0 3px 0;
+  background:#fff;
+}
