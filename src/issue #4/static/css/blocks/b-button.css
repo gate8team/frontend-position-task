@@ -1,3 +1,37 @@
 .b-button {
-	
+  margin: 10px 5px;
+  padding: 6px 40px;
+  display: inline-block;
+  cursor: pointer;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  text-shadow: 1px -1px 2px #6b7b22;
+  outline: none;
+  border: 0;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  border-radius: 16px;
+  background: #889f21;
+  background: -moz-linear-gradient(bottom, #748c00 0%, #889f21 50%, #a0b348 100%);
+  background: -webkit-linear-gradient(bottom, #748c00 0%, #889f21 50%, #a0b348 100%);
+  background: -o-linear-gradient(bottom, #748c00 0%, #889f21 50%, #a0b348 100%);
+  background: -ms-linear-gradient(bottom, #748c00 0%, #889f21 50%, #a0b348 100%);
+  background: linear-gradient(bottom, #748c00 0%, #889f21 50%, #a0b348 100%);
+  box-shadow: 0 -1px 1px 1px #d5e68a, 0 1px 1px 1px #7e9900,
+              0 -1px 1px 2px #90a632, 0 1px 1px 2px #556600,
+              0 2.5px 2px 5px #e2e4de, 0 -2.5px 2px 5px #daddd8,
+              0 2px 0 4px #aeaeae, 0 -2px 0 4px #c3c8c4;
+  -webkit-transition: box-shadow 0.5s ease-in-out 0s;
+  -moz-transition: box-shadow 0.5s ease-in-out 0s;
+  -o-transition: box-shadow 0.5s ease-in-out 0s;
+  -ms-transition: box-shadow 0.5s ease-in-out 0s;
+  transition: box-shadow 0.5s ease-in-out 0s;
+}
+
+.b-button:hover {
+  box-shadow: 0 -1px 1px 1px #d5e68a, 0  1px 1px 1px #7e9900,
+              0 -1px 1px 2px #90a632, 0 1px 1px 2px #556600,
+              0 2.5px 2px 5px #aeaeae, 0 -2.5px 2px 5px #d5d8d4,
+              0 2px 0 4px #aeaeae, 0 -2px 0 4px #c3c8c4;
 }
