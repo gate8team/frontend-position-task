@@ -4,3 +4,58 @@ __________________________________*/
 
 /* =User Styles
 __________________________________*/
+.-boxed *, .-boxed *:before, .-boxed *:after {
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -o-box-sizing:border-box;
+  -ms-box-sizing:border-box;
+  box-sizing:border-box;
+}
+
+.b-gallery-wr {
+  margin: 10px;
+  padding: 10px;
+}
+
+.b-gallery {
+  margin: -10px 0 0 -10px;
+  padding: 0 10px 10px 0;
+  border: 1px solid #ccc;
+}
+
+.b-gallery-item {
+  margin: 10px 0 0 0;
+  padding: 0 0 0 10px;
+  width: 25%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.b-gallery-item div {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+div.-h100 {
+  height: 120px;
+}
+
+div.-h40 {
+  height: 60px;
+}
+
+div.-h60 {
+  height: 80px;
+}
+
+div.-h50 {
+  height: 70px;
+}
+
+div.-h90 {
+  height: 110px;
+}
+
+div.-h80 {
+  height: 100px;
+}
