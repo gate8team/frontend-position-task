@@ -1,6 +1,7 @@
 .b-button {
-  margin: 10px 5px;
+  margin: 10px 15px 5px 0;
   padding: 6px 40px;
+  position: relative;
   display: inline-block;
   cursor: pointer;
   color: #fff;
@@ -29,9 +30,21 @@
   transition: box-shadow 0.5s ease-in-out 0s;
 }
 
+.b-button:before {
+  content: "";
+  position: absolute;
+  left: -6px;
+  right: -6px;
+  top: -7px;
+  bottom: -7px;
+  border: 1px solid #aeaeae;
+  /*z-index: 0;*/
+  border-radius: 25px;
+}
+
 .b-button:hover {
   box-shadow: 0 -1px 1px 1px #d5e68a, 0  1px 1px 1px #7e9900,
               0 -1px 1px 2px #90a632, 0 1px 1px 2px #556600,
-              0 2.5px 2px 5px #aeaeae, 0 -2.5px 2px 5px #d5d8d4,
-              0 2px 0 4px #aeaeae, 0 -2px 0 4px #c3c8c4;
+              0 1px 2px 5px #c3c8c4, 0 -1px 2px 5px #c3c8c4,
+              0 2px 0 4px #c3c8c4, 0 -2px 0 4px #c3c8c4;
 }
