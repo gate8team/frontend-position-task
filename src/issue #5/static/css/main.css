@@ -4,3 +4,62 @@ __________________________________*/
 
 /* =User Styles
 __________________________________*/
+.-boxed *, .-boxed *:before, .-boxed *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.-relative {
+  position: relative;
+}
+
+.b-content {
+  margin: 10px 0 10px 0;
+  position: relative;
+
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
+  -moz-filter: blur(4px);
+  -o-filter: blur(4px);
+  -ms-filter: blur(4px);
+  filter: url(../svg/blur.svg#blur);
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='4');
+}
+
+.b-content p + p {
+  margin: 10px 0 0 0;
+}
+
+.b-popup {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.3);
+  white-space: nowrap;
+  font-size: 0;
+  text-align: center;
+}
+
+.b-popup:before {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  content: '';
+}
+
+.b-popup-content {
+  padding: 10px;
+  display: inline-block;
+  white-space: normal;
+  background: #fff;
+  border: 1px solid #ccc;
+  text-align: left;
+  font-size: 12px;
+}
