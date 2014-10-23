@@ -1,5 +1,5 @@
 .b-button {
-  margin: 10px 15px 5px 0;
+  margin: 15px 20px 10px 20px;
   padding: 6px 40px;
   position: relative;
   display: inline-block;
@@ -33,18 +33,18 @@
 .b-button:before {
   content: "";
   position: absolute;
-  left: -6px;
-  right: -6px;
-  top: -7px;
-  bottom: -7px;
+  left: -8px;
+  right: -8px;
+  top: -9px;
+  bottom: -9px;
   border: 1px solid #aeaeae;
   /*z-index: 0;*/
-  border-radius: 25px;
+  border-radius: 30px;
 }
 
 .b-button:hover {
   box-shadow: 0 -1px 1px 1px #d5e68a, 0  1px 1px 1px #7e9900,
               0 -1px 1px 2px #90a632, 0 1px 1px 2px #556600,
-              0 1px 2px 5px #c3c8c4, 0 -1px 2px 5px #c3c8c4,
+              0 2.5px 2px 5px #c3c8c4, 0 -2.5px 2px 5px #c3c8c4,
               0 2px 0 4px #c3c8c4, 0 -2px 0 4px #c3c8c4;
 }
