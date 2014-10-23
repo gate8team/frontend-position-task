@@ -5,3 +5,11 @@ __________________________________*/
 
 /* =User Styles
 __________________________________*/
+.b-errors {
+    margin: 10px 0 10px 0;
+    color: crimson;
+}
+
+.i-error {
+    border: 1px solid crimson;
+}

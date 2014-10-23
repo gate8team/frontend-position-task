@@ -15,7 +15,7 @@ __________________________________*/
 .b-row {
   margin: 10px 0 10px 0;
   width: 100%;
-  border: 1px solid #eee;
+  border: 1px solid #ccc;
   overflow: hidden;
 }
 
@@ -26,7 +26,7 @@ __________________________________*/
 .b-column.-bordered {
   margin-bottom: -99999px;
   padding-bottom: 99999px;
-  border-left: 1px solid #eee;
+  border-left: 1px solid #ccc;
 }
 
 .b-column.-bordered:first-child {
