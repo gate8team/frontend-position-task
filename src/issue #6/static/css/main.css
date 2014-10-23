@@ -4,3 +4,42 @@ __________________________________*/
 
 /* =User Styles
 __________________________________*/
+.-boxed *, .-boxed *:before, .-boxed *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.b-shaped {
+  margin: 0;
+  padding: 0;
+  color: #000;
+}
+
+.b-shaped::after {
+  display: block;
+  height: 0;
+  content: '';
+  clear: both;
+}
+
+.b-shaped-start {
+  float: left;
+  font-size: 190px;
+  line-height: 190px;
+}
+
+.b-shaped-content {
+  margin: 20px 0 0 -40px;
+  float: left;
+  font-size: 14px;
+}
+
+.b-shaped-end {
+  margin: 0 0 0 -5px;
+  float: left;
+  font-size: 170px;
+  line-height: 150px;
+}
