@@ -4,3 +4,27 @@ __________________________________*/
 
 /* =User Styles
 __________________________________*/
+.-boxed *, .-boxed *:before, .-boxed *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.-percent {
+  width: 40%;
+}
+
+.b-content-wr {
+  padding-bottom: 100%;
+  width: 100%;
+  height: 0;
+  overflow: auto;
+  background: #ccc;
+}
+
+.b-content {
+  margin-bottom: -100%;
+  padding: 20px;
+}
