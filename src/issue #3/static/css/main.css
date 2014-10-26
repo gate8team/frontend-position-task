@@ -14,12 +14,14 @@ __________________________________*/
 
 .b-row {
   margin: 10px 0 10px 0;
+  display: block;
   width: 100%;
   border: 1px solid #ccc;
   overflow: hidden;
 }
 
 .b-column {
+  display: block;
   width: 100%;
 }
 
