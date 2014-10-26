@@ -2,6 +2,18 @@ $(function() {
 	var canvas = document.getElementById('canvas'),
 		context = canvas.getContext('2d');
 
+  var enableForm = function() {
+    $('.b-button[type=reset]').prop('disabled', true);
+    $('.b-button[type=submit]').prop('disabled', false);
+    $('.b-input').prop('disabled', false);
+  };
+
+  var disableForm = function() {
+    $('.b-button[type=reset]').prop('disabled', false);
+    $('.b-button[type=submit]').prop('disabled', true);
+    $('.b-input').prop('disabled', true);
+  };
+
   var pendulum = new Pendulum({
     position: {x: 300, y: 200},
     dampingFactor: 0.005,
@@ -24,10 +36,7 @@ $(function() {
     var angle = parseFloat($('.b-input').val());
 
     if ((angle > 0 && angle <= 90) || (angle < 0 && angle >= -90)) {
-      $('.b-button[type=reset]').prop('disabled', false);
-      $('.b-button[type=submit]').prop('disabled', true);
-      $('.b-input').prop('disabled', true);
-
+      disableForm();
       pendulum.setStartAngle(angle);
       drawer.start();
     } else {
@@ -36,18 +45,13 @@ $(function() {
   });
 
   $('.b-form').bind('reset', function(event) {
-    $('.b-button[type=reset]').prop('disabled', true);
-    $('.b-input').prop('disabled', false);
-    $('.b-button[type=submit]').prop('disabled', false);
     event.preventDefault();
-
+    enableForm();
     drawer.end();
   });
 
   $(document).on('drawer-ended', function(event) {
     event.preventDefault();
-    $('.b-button[type=reset]').prop('disabled', true);
-    $('.b-button[type=submit]').prop('disabled', false);
-    $('.b-input').prop('disabled', false);
+    enableForm();
   });
 });
